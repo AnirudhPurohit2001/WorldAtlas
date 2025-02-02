@@ -16,7 +16,7 @@ export const Footers = () => {
 
     return (
         <footer className="footer-section">
-            <div className="container test">{
+            <div className="container grid grid-three-cols">{
                 footerDetails.map((curData, index) => {
                     const { icon, title, details } = curData;
                     return (
