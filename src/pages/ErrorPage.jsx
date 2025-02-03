@@ -8,7 +8,7 @@ export const ErrorPage = () => {
         <div>
             <h1>Oops! An Error Occured.</h1>
             {error && <p>{error.data} </p>}
-            <NavLink to="/"> <Button> Go Back </Button> </NavLink>
+            <NavLink to="/"> <button>Go Back </button> </NavLink>
 
         </div>
     );

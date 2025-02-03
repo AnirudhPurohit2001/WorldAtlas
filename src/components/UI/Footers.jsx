@@ -20,7 +20,7 @@ export const Footers = () => {
                 footerDetails.map((curData, index) => {
                     const { icon, title, details } = curData;
                     return (
-                        <div classname="footer-contact" key={index}>
+                        <div className="footer-contact" key={index}>
                             <div className="icon">{footerIcons[icon]}</div>
                             < div className="footer-contact-text">
                                 <p>{title}</p>
