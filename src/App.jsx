@@ -8,7 +8,7 @@ import { Contact } from "./pages/Contact";
 import { Country } from "./pages/Country";
 import { About } from "./pages/About";
 import { ErrorPage } from "./pages/ErrorPage";
-
+import { CountryDetails } from "./components/Layout/CountryDetails";
 
 
 const router = createBrowserRouter([
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />
+      },
+      {
+        path: "country/:id",
+        element: <CountryDetails />
       },
       {
         path: "country",

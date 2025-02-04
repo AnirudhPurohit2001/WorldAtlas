@@ -297,7 +297,7 @@ nav ul {
   letter-spacing: -0.02em;
   line-height: 40px;
   font-style: normal;
-  font-size: 28px;
+  font-size: 22px;
   padding-bottom: 8px;
 }
 
@@ -392,17 +392,17 @@ country Card
   margin-top: 3.2rem;
 }
 .country-section {
-  margin: 6.4rem auto 9.6rem auto;
+  margin: 5.4rem auto 8.6rem auto;
   & .grid {
     gap: 3.2rem;
-    max-width: 132rem;
+    max-width: 108rem;
     margin: auto;
   }
 
   & img {
     width: 100%;
     max-width: 50rem;
-    height: 16rem;
+    height: 12rem;
   }
 }
 

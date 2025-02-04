@@ -3,7 +3,6 @@ import { getCountryData } from "../api/postApi";
 import { Loader } from "../components/UI/Loader";
 import { CountryCard } from "../components/Layout/CountryCard";
 
-
 export const Country = () => {
     const [isPending, startTransition] = useTransition();
     const [countries, setCountries] = useState([]);
@@ -11,15 +10,14 @@ export const Country = () => {
     useEffect(() => {
         startTransition(async () => {
             const res = await getCountryData();
-            console.log(res);
             setCountries(res.data);
         });
     }, []);
 
     if (isPending) return <Loader />
 
-    return <section className="country-section">
-        <ul className=" grid grid-four-cols">
+    return (<section className="country-section">
+        <ul className="grid grid-three-cols">
             {
                 countries.map((curcountry, index) => {
                     return <CountryCard country={curcountry} key={index} />;
@@ -27,7 +25,5 @@ export const Country = () => {
             }
         </ul>
     </section>
-
-
-
+    );
 };
